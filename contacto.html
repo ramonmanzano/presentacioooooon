@@ -28,13 +28,16 @@
         <h1>Contacto</h1>
         <p>¿Tienes dudas? Rellena el formulario y nos pondremos en contacto contigo.</p>
 
+        <!-- FORMULARIO DE CONTACTO: Usa el ID 'contactForm' para que JS pueda escucharlo -->
         <form id="contactForm">
             <div class="form-group">
                 <label for="nombre">Nombre completo:</label>
+                <!-- required: El navegador no deja enviar el formulario vacío -->
                 <input type="text" id="nombre" required>
             </div>
             <div class="form-group">
                 <label for="email">Correo electrónico:</label>
+                <!-- type="email": Valida automáticamente que haya una @ y un dominio -->
                 <input type="email" id="email" required>
             </div>
             <div class="form-group">
@@ -44,6 +47,7 @@
             <button type="submit">Enviar mensaje</button>
         </form>
 
+        <!-- MENSAJE DE ÉXITO: Oculto por defecto (display:none), JS lo activa al validar -->
         <div id="success-msg" style="display:none; color: #2ecc71; margin-top: 20px; font-weight: bold;">
             ¡Mensaje enviado correctamente! Nos vemos en el ring.
         </div>

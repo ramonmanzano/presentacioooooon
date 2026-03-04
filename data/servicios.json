@@ -16,5 +16,11 @@
         "titulo": "Boxeo Fitness",
         "descripcion": "Quema calorías y mejora tu forma física golpeando el saco sin contacto directo.",
         "imagen": "https://images.unsplash.com/photo-1517438476312-10d79c67750d?auto=format&fit=crop&q=80&w=300&h=200"
+    },
+    {
+        "id": 4,
+        "titulo": "Entrenamiento Personal",
+        "descripcion": "Clases 1 a 1 adaptadas totalmente a tus objetivos y ritmo para progresar más rápido.",
+        "imagen": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=300&h=200"
     }
 ]

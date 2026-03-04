@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- SECCIÓN DE NAVEGACIÓN (HEADER) -->
     <header>
         <nav>
             <div class="logo-container">
@@ -17,6 +18,7 @@
                 <div class="logo-text">Manzano Boxing</div>
             </div>
             <ul class="nav-links">
+                <!-- Enlaces a las diferentes páginas del proyecto -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Clases</a></li>
                 <li><a href="contacto.html">Apuntarse</a></li>
@@ -29,21 +31,21 @@
         <p>No solo enseñamos a boxear, forjamos disciplina, fuerza y confianza. Únete a nuestra comunidad y saca el
             guerrero que llevas dentro.</p>
 
+        <!-- CONTENEDOR DE PESTAÑAS (TABS) -->
         <div class="tabs-container">
             <h2>Conoce el club</h2>
             <div class="tab-buttons">
+                <!-- Los botones llaman a showTab() en JS para cambiar el contenido -->
                 <button class="tab-btn active" onclick="showTab(event, 'presentacion')">Quiénes somos</button>
                 <button class="tab-btn" onclick="showTab(event, 'filosofia')">Nuestra forma</button>
                 <button class="tab-btn" onclick="showTab(event, 'instalaciones')">El local online</button>
             </div>
 
+            <!-- Contenido de cada pestaña. Solo 'presentacion' empieza como 'active' -->
             <div id="presentacion" class="tab-content active">
                 <h3>Pasión por el Boxeo</h3>
-                <p>Manzano Boxing es más que un lugar para entrenar: es una comunidad. Creemos en un boxeo accesible
-                    para personas con vidas normales, trabajo, estudios y responsabilidades fuera del ring. Nuestro
-                    objetivo es compartir lo mejor de este deporte —disciplina, esfuerzo y superación— en un ambiente
-                    respetuoso donde cualquiera pueda aprender, mejorar su forma física y disfrutar del boxeo sin perder
-                    el equilibrio con su vida diaria.</p>
+                <p>Manzano Boxing es más que un lugar para entrenar: es una comunidad...</p>
+                <!-- Botón de interacción simple -->
                 <button onclick="saludo_al_pulsar()">🥊 Saludo a la clase</button>
             </div>
 
@@ -55,9 +57,8 @@
 
             <div id="instalaciones" class="tab-content">
                 <h3>Entrenamiento de Boxeo Online</h3>
-                <p>Accede a clases y entrenamientos desde cualquier lugar. Mejora tu técnica, condición física y
-                    disciplina con sesiones guiadas, rutinas adaptadas a distintos niveles y contenidos pensados para
-                    que puedas practicar boxeo a tu ritmo, compatibilizándolo con tu vida diaria.</p>
+                <p>Accede a clases y entrenamientos desde cualquier lugar...</p>
+                <!-- Galería de imágenes en formato grid -->
                 <div class="galeria-grid">
                     <img src="imagenes/gimnasio1.png" alt="Instalaciones 1">
                     <img src="imagenes/gimnasio2.png" alt="Instalaciones 2">
@@ -72,6 +73,7 @@
         <p>&copy; 2024 Manzano Boxing Club - Proyecto Luis DAW</p>
     </footer>
 
+    <!-- Importante: El script siempre al final para que el HTML cargue primero -->
     <script src="js/script.js"></script>
 </body>
 
