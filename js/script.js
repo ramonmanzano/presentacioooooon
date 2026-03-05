@@ -1,4 +1,10 @@
-// --- BLOQUE DE INICIALIZACIÓN ---
+/************************************************************************
+ *                                                                      *
+ *                   BLOQUE DE INICIALIZACIÓN                           *
+ *      (Configuración inicial y eventos al cargar la página)           *
+ *                                                                      *
+ ************************************************************************/
+
 // Esperamos a que el DOM (la estructura HTML) esté cargado antes de ejecutar nada
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -8,7 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
         cargarServicios(); // Llama a la función que consume el JSON
     }
 
-    // --- BLOQUE DE VALIDACIÓN DE FORMULARIO ---
+    /************************************************************************
+     *                                                                      *
+     *               BLOQUE DE VALIDACIÓN DE FORMULARIO                     *
+     *         (Manejo del envío y comprobación de datos del form)          *
+     *                                                                      *
+     ************************************************************************/
+
     const form = document.getElementById('contactForm');
     if (form) {
         form.addEventListener('submit', (evento) => {
@@ -30,7 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// --- FUNCIONES INTERACTIVAS ---
+/************************************************************************
+ *                                                                      *
+ *                     FUNCIONES INTERACTIVAS                           *
+ *     (Lógica para botones, pestañas y otras acciones del usuario)     *
+ *                                                                      *
+ ************************************************************************/
 
 // Función simple de saludo para la consola
 function saludo_al_pulsar() {
@@ -60,7 +77,13 @@ function showTab(evt, tabId) {
     evt.currentTarget.classList.add('active');
 }
 
-// --- BLOQUE DE CARGA DINÁMICA (JSON) ---
+/************************************************************************
+ *                                                                      *
+ *                 BLOQUE DE CARGA DINÁMICA (JSON)                      *
+ *        (Consumo de datos externos y renderizado en el DOM)           *
+ *                                                                      *
+ ************************************************************************/
+
 function cargarServicios() {
     const contenedor = document.getElementById('lista-servicios');
 
